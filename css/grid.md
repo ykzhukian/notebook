@@ -1,7 +1,17 @@
+```html
+<div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+</div>
+```
+
 ```css
 .container {
   display: grid | inline-grid;
 }
+/*  */
 .container {
   grid-template-columns: ... | ...;
   grid-template-rows: ... | ...;
@@ -15,11 +25,5 @@
 .container {
   grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
   grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
-}
-```
-
-```js
-function stay() {
-  
 }
 ```
