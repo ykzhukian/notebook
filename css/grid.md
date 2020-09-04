@@ -85,14 +85,17 @@
 }
 .container {
   grid-template: <grid-template-rows> / <grid-template-columns>;
+
   grid-template: 
     "葡萄 葡萄 葡萄" 1fr 
     "龙虾 养鱼 养鱼" 1fr 
     "龙虾 养鱼 养鱼" 1fr 
     "西瓜 西瓜 西瓜" 1fr
     /1fr 1fr 1fr;
+
   /* 推荐用 grid 代替 grid-template */
   grid: 100px 300px / auto-flow 200px;
+
   /* 以上等同于 */
   grid-template-rows: 100px 300px;
   grid-auto-flow: column;
@@ -108,32 +111,51 @@
 /* 斜杠前面都是rows相关属性，斜杠后面都是columns相关属性 */
 .parent {
   display: grid | inline-grid | subgrid;
+  
   grid-template-columns: <track-size> ... | <line-name> <track-size> ...;
+  
   grid-template-rows: <track-size> ... | <line-name> <track-size> ...;
+  
   grid-template-areas:
     "header header header header"
     "main main . sidebar"
     "footer footer footer footer";
+    
   grid-template: none | subgrid | <grid-template-rows> / <grid-template-columns>;
+  
   grid-template: [row1-start] "header header header" 25px [row1-end]
     [row2-start] "footer footer footer" 25px [row2-end]
     / auto 50px auto;
+    
   grid-column-gap: <line-size>;
+  
   grid-row-gap: <line-size>;
+  
   grid-gap: <grid-row-gap> <grid-column-gap>;
+  
   /* 现在用 */
   gap: <grid-row-gap> <grid-column-gap>;
+  
   justify-items: start | end | center | stretch;
+  
   align-items: start | end | center | stretch;
+  
   justify-content: start | end | center | stretch | space-around | space-between | space-evenly;
+  
   align-content: start | end | center | stretch | space-around | space-between | space-evenly;
+  
   place-content: <align-content> <justify-content>;
+  
   /* 隐式的网格宽度 */
-  grid-auto-columns: <track-size> ...; 
+  grid-auto-columns: <track-size> ...;
+   
   grid-auto-rows: <track-size> ...;
+  
   grid-auto-flow: row | column | row dense | column dense;
+  
   /* dense这个英文是稠密的意思。如果有设置，则表示自动排列启用“密集”打包算法。如果稍后出现的网格比较小，则尝试看看前面有没有合适的地方放置，使网格尽可能稠密紧凑。此属性值仅仅改变视觉顺序，会导致DOM属性和实际呈现顺序不符合，这对于可访问性是不友好的，建议谨慎使用。 */
   grid: <grid-template-rows> / [ auto-flow && dense? ] <grid-auto-columns>?;
+  
 }
 ```
 
@@ -142,13 +164,21 @@
 ```css
 .item {
   grid-column-start: <number> | <name> | span <number> | span <name> | auto;
+
   grid-column-end: <number> | <name> | span <number> | span <name> | auto;
+
   grid-row-start: <number> | <name> | span <number> | span <name> | auto;
+
   grid-row-end: <number> | <name> | span <number> | span <name> | auto;
+
   grid-column: <start-line> / <end-line> | <start-line> / span <value>;
+
   grid-row: <start-line> / <end-line> | <start-line> / span <value>;
+
   grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
+
   justify-self: stretch | start | end | center;
+
   align-self: stretch | start | end | center;
 }
 ```
