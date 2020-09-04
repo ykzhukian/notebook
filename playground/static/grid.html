@@ -25,13 +25,20 @@
       display: grid;
       width: 500px;
       height: 500px;
-      grid-template-columns: 1fr 1fr 1fr;
+      /* grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-template-areas: 
         "葡萄 葡萄 葡萄"
         "龙虾 养鱼 养鱼"
         "龙虾 养鱼 养鱼"
-        "西瓜 西瓜 西瓜";
+        "西瓜 西瓜 西瓜"; */
+      /* 上面等同于下面 */
+      grid: 
+        "葡萄 葡萄 葡萄" 1fr 
+        "龙虾 养鱼 养鱼" 1fr 
+        "龙虾 养鱼 养鱼" 1fr 
+        "西瓜 西瓜 西瓜" 1fr
+        /1fr 1fr 1fr;
       gap: 10px;
     }
     .putao,
