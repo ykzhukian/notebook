@@ -47,7 +47,6 @@
   grid-template-columns: auto 1fr 1fr 1fr;
 }
 
-
 /* grid-template-areas */
 .container {
   grid-template-areas: 
