@@ -1,5 +1,5 @@
 ### JavaScript
-- [Vue3.0](./Javascript/vue3.0.md)
+- [Vue3.0](./JavaScript/vue3.0.md)
 
 ### CSS
 - [grid](./css/grid.md)
@@ -7,3 +7,4 @@
 
 ### IDE
 - [vscode](./IDE/vscode.md)
+- [iTerm](./IDE/iterm.md)
