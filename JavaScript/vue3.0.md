@@ -14,6 +14,23 @@
 
 #### 用  TypeScript 重写
 
+#### [ESlint Vue3.x](https://eslint.vuejs.org/rules)
+
+```js
+extends: [
+  'airbnb',
+  'plugin:vue/vue3-essential',
+  'plugin:vue/vue3-strongly-recommended',
+],
+```
+
+VSCode 的 vetur 暂时还不支持 Vue3 或者我哪里配的不对，它总是强行把 Vue2.x 的 lint 给我过一遍，所以就，
+`settings.json` 里：
+
+```json
+"vetur.validation.template": false,
+```
+
 #### Fragment
 ```js
 <template>
@@ -21,9 +38,6 @@
   <div>2</div>
 </template>
 ```
-
-#### Custom Render API
-自定义渲染，用户可自定义渲染目标平台（比如Canvas）
 
 #### Composition API
 - 更好的逻辑服用与代码组织
@@ -34,6 +48,13 @@
 `Composition API` 解决了这个难题。同事也解决 `Mixin` 带来的副作用。本质是函数。
 
 ```js
+// 函数组件，从原生命周期抽离出共用的逻辑，本质是函数，容易复用
+const sayHello = () => {
+  onMounted(() => {
+    console.log('hello');
+  });
+};
+
 export default defineComponent({
   setup() {
     sayHello()
@@ -78,19 +99,14 @@ export default defineComponent({
 ```
 
 #### Vue Test Utils Next（VTU） 单元测试
+##### 测试功能，不是测试细节。
 一个组件：
 - 输入 -> props / 用户交互
 - 输出 -> dom渲染 / Events（emit）
 
-测试功能，不是测试细节。
+例子：[button.spec.js](playground/Vue3.0/__tests__/button.spec.js)
 
 
 
-
-
-
-
-
-
-#### ESlint V3.x
-[https://eslint.vuejs.org/rules]
+#### Custom Render API
+自定义渲染，用户可自定义渲染目标平台（比如Canvas）
