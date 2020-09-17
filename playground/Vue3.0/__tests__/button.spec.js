@@ -3,6 +3,8 @@ import Button from '../src/components/Button.vue';
 
 describe('Button', () => {
   it('content', () => {
+    // given
+    // 准备数据
     const Comp = {
       template: '<div><Button>默认按钮</Button></div>',
     };

@@ -87,7 +87,6 @@ export default defineComponent({
       console.log('watch double', value);
     })
 
-
     return {
       count,
       state,
@@ -99,14 +98,22 @@ export default defineComponent({
 ```
 
 #### Vue Test Utils Next（VTU） 单元测试
-##### 测试功能，不是测试细节。
+##### 测试功能，不是测试细节。主要是为了避免新功能影响旧功能。
 一个组件：
 - 输入 -> props / 用户交互
 - 输出 -> dom渲染 / Events（emit）
 
 例子：[button.spec.js](playground/Vue3.0/__tests__/button.spec.js)
 
+TDD：Test-driven development 从使用者角度思考
+1. 先写测试 (根据用户使用的方式 user story)
+2. 写逻辑让测试通过
+3. 重构
 
+#### TDD模式 重构 Element UI Button
+1. 拆分需要实现的功能
+
+例子：[button.spec.js](playground/Vue3.0/__tests__/button.spec.js)
 
 #### Custom Render API
 自定义渲染，用户可自定义渲染目标平台（比如Canvas）
