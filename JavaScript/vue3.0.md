@@ -112,6 +112,11 @@ TDD：Test-driven development 从使用者角度思考
 
 #### TDD模式 重构 Element UI Button
 1. 拆分需要实现的功能
+- 可以显示 slot 的内容
+- 设置 size
+- 设置 type
+- 是否 圆角、plain、disabled、...
+
 
 例子：[button.spec.js](playground/Vue3.0/__tests__/button.spec.js)
 

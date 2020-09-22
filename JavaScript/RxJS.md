@@ -189,7 +189,21 @@ const result = from(array);
 result.subscribe(x => console.log(x));
 ```
 
-
 #### Hot Observable 与 Cold Observable
 - Hot Observable 无论有没有 Subscriber 订阅，事件始终都会发生。当 Hot Observable 有多个订阅者时，Hot Observable 与订阅者们的关系是一对多的关系，可以与多个订阅者共享信息。
 - 然而，Cold Observable 只有 Subscriber 订阅时，才开始执行发射数据流的代码。并且 Cold Observable 和 Subscriber 只能是一对一的关系，当有多个不同的订阅者时，消息是重新完整发送的。也就是说对 Cold Observable 而言，有多个Subscriber的时候，他们各自的事件是独立的。
+
+
+### Others
+
+Observable 就是 Promise++。
+```js
+var stream = Rx.Observable.fromPromise(promise)
+```
+
+Metastream：包含 Stream 的 Stream
+
+
+### Reference
+(RP 响应式编程)[https://wiki.jikexueyuan.com/project/android-weekly/issue-145/introduction-to-RP.html]
+
