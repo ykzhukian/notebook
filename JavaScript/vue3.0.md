@@ -103,7 +103,7 @@ export default defineComponent({
 - 输入 -> props / 用户交互
 - 输出 -> dom渲染 / Events（emit）
 
-例子：[button.spec.js](playground/Vue3.0/__tests__/button.spec.js)
+例子：[button.spec.js](https://github.com/ykzhukian/notebook/blob/master/playground/Vue3.0/__tests__/button.spec.js)
 
 TDD：Test-driven development 从使用者角度思考
 1. 先写测试 (根据用户使用的方式 user story)
@@ -117,8 +117,7 @@ TDD：Test-driven development 从使用者角度思考
 - 设置 type
 - 是否 圆角、plain、disabled、...
 
-
-例子：[button.spec.js](playground/Vue3.0/__tests__/button.spec.js)
+例子：[button.spec.js](https://github.com/ykzhukian/notebook/blob/master/playground/Vue3.0/__tests__/button.spec.js)
 
 #### Custom Render API
 自定义渲染，用户可自定义渲染目标平台（比如Canvas）
