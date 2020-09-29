@@ -40,13 +40,16 @@ module.exports = {
           {
             loader: 'sass-resources-loader',
             options: {
-              resources: [resolve('./src/assets/sass/variables.scss')],
+              resources: [
+                resolve('./src/assets/sass/variables.scss')
+              ],
               caches: true
             },
           },
         ],
         include: [
           resolve('./src'),
+          resolve('./node_modules/swiper/swiper.scss'),
         ],
       },
       {
