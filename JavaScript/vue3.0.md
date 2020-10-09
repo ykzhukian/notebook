@@ -1,3 +1,5 @@
+## Section 1
+
 #### 认识 Vue3
 - Performance 比 Vue2 runtime 快了2倍
   - 重写了虚拟 dom 的实现
@@ -119,5 +121,16 @@ TDD：Test-driven development 从使用者角度思考
 
 例子：[button.spec.js](https://github.com/ykzhukian/notebook/blob/master/playground/Vue3.0/__tests__/button.spec.js)
 
+## Section 2
+
+- Custom Render API
+- Vue3 源码
+
 #### Custom Render API
 自定义渲染，用户可自定义渲染目标平台（比如Canvas）
+
+- createRenderer
+- 接口
+  - createElement
+  - insert
+  - patchProp
