@@ -134,3 +134,6 @@ TDD：Test-driven development 从使用者角度思考
   - createElement
   - insert
   - patchProp
+
+例子：[button.spec.js](https://github.com/ykzhukian/notebook/blob/master/playground/Vue3-Canvas/)
+
