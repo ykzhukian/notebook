@@ -135,5 +135,5 @@ TDD：Test-driven development 从使用者角度思考
   - insert
   - patchProp
 
-例子：[button.spec.js](https://github.com/ykzhukian/notebook/blob/master/playground/Vue3-Canvas/)
+例子：[自定义渲染到画布(Pixi.js创建)上](https://github.com/ykzhukian/notebook/blob/master/playground/Vue3-Canvas/main.js)
 

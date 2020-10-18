@@ -15,6 +15,11 @@ const renderer = createRenderer({
       element.beginFill(0xff0000)
       element.drawRect(0, 0, 500, 500)
       element.endFill()
+    } else if (type === 'circle') {
+      element = new Graphics()
+      element.beginFill(0xfff000)
+      element.drawCircle(0, 0, 50)
+      element.endFill()
     }
 
     return element
