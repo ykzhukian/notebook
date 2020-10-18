@@ -6,10 +6,12 @@ import { defineComponent, h } from '@vue/runtime-core'
 export default defineComponent({
 
   // template
-  redner() {
-    // <div></div> 的虚拟 DOM
-    const vnode = h('div')
+  render() {
+    // 虚拟 DOM
+    // <react x={100} y={100}></react>
+    const vnode = h('rect', { x: 100, y: 100 })
 
-    console.log('vnode', vnode);
+    console.log('vnode', vnode)
+    return vnode
   }
 })
